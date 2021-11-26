@@ -1,0 +1,37 @@
+<div class="calculatrice">
+    <p class="result">{{input}}</p>
+        <table>
+            <tr>
+                <td colspan="2"><input type="button" value="C" (click)="effacerTout()"> </td>
+                <td><input type="button" value="DEL" (click)="effacer()"></td>
+                <td class="operation"><input type="button" value="/" (click)="pressOperator('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" (click)="pressNum('7')"></td>
+                <td><input type="button" value="8" (click)="pressNum('8')"></td>
+                <td><input type="button" value="9" (click)="pressNum('9')"> </td>
+                <td class="operation"><input type="button" value="X" (click)="pressOperator('*')"></td>
+            </tr>
+            
+            <tr>
+                <td><input type="button" value="4" (click)="pressNum('4')"> </td>
+                <td><input type="button" value="5" (click)="pressNum('5')"></td>
+                <td><input type="button" value="6" (click)="pressNum('6')"></td>
+                <td class="operation"><input type="button" value="-" (click)="pressOperator('-')"></td>
+            </tr>
+            
+            <tr>
+                <td><input type="button" value="3" (click)="pressNum('3')"> </td>
+                <td><input type="button" value="2" (click)="pressNum('2')"></td>
+                <td><input type="button" value="1" (click)="pressNum('1')"></td>
+                <td class="operation"><input type="button" value="+" (click)="pressOperator('+')"></td>
+            </tr>
+            
+            <tr>
+                <td colspan="2"><input type="button" value="0" (click)="pressNum('0')"> </td>
+                <td><input type="button" value="." (click)="pressNum('.')"></td>
+                <td class="operation"><input type="button" value="=" (click)="getAnswer()"></td>
+            </tr>
+        </table>
+    </div>
+    <h1 class="name">Realise par KAMSU KOM FLORIAN 4GI</h1>
